@@ -3,6 +3,8 @@
 //Aqui ele criou como ANY e mesmo após atribuir uma string ele continua como ANY pois na criação da variável não definimos tipo nem valor.
 let nome;
 nome = 'Igor';
+nome = 23;
+console.log(typeof(nome));//ira aparecer number
 //nesse caso ele entende que é um number dinamicamente igual no JS
 let idade = 15;
 //Nesse caso ele entende que é uma string dinamicamente igual no JS

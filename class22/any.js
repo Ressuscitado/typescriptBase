@@ -1,6 +1,8 @@
 "use strict";
 let nome;
 nome = 'Igor';
+nome = 23;
+console.log(typeof (nome));
 let idade = 15;
 let nome2 = 'Igor';
 let qualquerCoisa = 'Igor';
