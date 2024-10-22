@@ -1,4 +1,22 @@
 "use strict";
+class Animal49 {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+        console.log(`Animal criado: ${nome}, Idade: ${idade}`);
+    }
+}
+class Cachorro49 extends Animal49 {
+    constructor(nome, idade, raca) {
+        super(nome, idade);
+        this.raca = raca;
+    }
+    latir() {
+        console.log(`${this.nome} está latindo!`);
+    }
+}
+const meuCachorro49 = new Cachorro49("Rex", 5, "Labrador");
+meuCachorro49.latir();
 class Produtos49 {
     exibirProdutos49(...produtos) {
         for (const produto of produtos) {

@@ -1,3 +1,30 @@
+/*Se a classe pai tiver parâmetros no construtor, a classe filha deve chamar super() e passar esses parâmetros.
+Se a classe pai não tiver construtor, você não precisa se preocupar em passar parâmetros no super(), ou pode até omitir o super().*/
+// Classe pai 'Animal'
+class Animal49 {
+    constructor(public nome: string, public idade: number) {
+        console.log(`Animal criado: ${nome}, Idade: ${idade}`);
+    }
+}
+
+// Classe filha 'Cachorro' que estende 'Animal'
+class Cachorro49 extends Animal49 {
+    constructor(nome: string, idade: number, public raca: string) {
+        // Chamando o construtor da classe pai 'Animal' com os parâmetros nome e idade
+        super(nome, idade);
+        //Não precisamos colocar PUBLIC pois na classe pai ja colocamos no construtor
+    }
+
+    latir(): void {
+        console.log(`${this.nome} está latindo!`);
+    }
+}
+
+// Criando uma instância da classe filha
+const meuCachorro49 = new Cachorro49("Rex", 5, "Labrador");
+meuCachorro49.latir(); // Saída: Rex está latindo!
+
+
 //Classes com operador rest, instanciamos e podemos usar as funções criadas dentro da classe.
 //Toda classe em TS por padrão é publica, logo n precisa da palavra reservada public
 class Produtos49 {
