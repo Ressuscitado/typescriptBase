@@ -1,5 +1,6 @@
 /*Se a classe pai tiver parâmetros no construtor, a classe filha deve chamar super() e passar esses parâmetros.
-Se a classe pai não tiver construtor, você não precisa se preocupar em passar parâmetros no super(), ou pode até omitir o super().*/
+Se a classe pai não tiver construtor, você não precisa se preocupar em passar parâmetros no super(), ou pode até omitir o super().
+*/
 // Classe pai 'Animal'
 class Animal49 {
     constructor(public nome: string, public idade: number) {
@@ -83,3 +84,7 @@ class Estudante49_1 {
 }
 const estudante49_1 = new Estudante49_1(2, 'Artus');
 estudante49_1.listarEstudante49_1();
+
+/*OBS: Quando eu jogo uma classe dentro de um parametro de uma função como se fosse um "tipo", eu estou dizendo que aquela função aceita INSTANCIAS daquela classe que foi passada como parametro, normalmente quando fazemos isso usamos o INSTANCEOF para averiguar se o objeto passado é uma instância daquela classe */
+
+/*Classes não podem ser passadas como tipos/interfaces a variáveis, apenas podem ser instanciadas, ou usar seus métodos diretamente no caso dos STATICS! Quando as classes em si são passadas para um parametro de uma função descrevendo oq aquele parametro aceita, eu estou dizendo que aquele parametro aceita as instancias daquela classe, não a classe original em si. */

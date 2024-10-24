@@ -60,7 +60,25 @@ class Gato65 implements IAnimal65 {
 const gato65 = new Gato65("Garfield", 5, true);
 gato65.comer("Carne");
 
-
+//INTERFACE com OMIT (utility-types)
+/*O OMIT serve para podermos sobrescrever as propriedades da interface que extendemos, para isso devemos colocar "Omit<Funcionario65, "id">", sendo o omit, a interface e a propriedade que vamos sobrescrever. Se for mais de uma usar o OU |, pipe para separar */
+interface Funcionario65 {
+    id: number;
+    nome: string;
+    salario: number;
+}
+interface Desenvolvedor65 extends Omit<Funcionario65, 'id' | 'salario'> {
+    liguagemProgramacao: string;
+    salario: string;
+    id: string;
+} 
+const desenvoldor65: Desenvolvedor65 = {
+    id: '123',
+    nome: 'Artus',
+    salario: '5000',
+    liguagemProgramacao: 'TypeScript'
+}
+console.log(desenvoldor65);
 
 /*Um type Alias é uma definição de tipo que pode ser usada para descrever a estrutura de um objeto, mas também pode ser usado para definir tipos primitivos, uniões, tuplas e muito mais. Types são mais flexíveis do que interfaces em alguns aspectos.*/
 
@@ -176,3 +194,7 @@ const pj65 = pessoa65 as PessoaJuridica65;
 Se a verificação anterior retornar true, o código entra no bloco do if e faz uma type assertion (as PessoaFisica65).
 Isso informa ao TypeScript que você tem certeza de que pessoa65 é do tipo PessoaFisica65. Assim, você pode acessar as propriedades específicas desse tipo, como cpf e dataNascimento, sem que o TypeScript gere um erro.
 Importante: A type assertion não altera o objeto em si; é apenas uma forma de informar ao TypeScript sobre a natureza do objeto, permitindo que você utilize suas propriedades com segurança.*/
+
+// arquivo1.ts
+
+

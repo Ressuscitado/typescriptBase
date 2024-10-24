@@ -24,6 +24,13 @@ class Gato65 {
 }
 const gato65 = new Gato65("Garfield", 5, true);
 gato65.comer("Carne");
+const desenvoldor65 = {
+    id: '123',
+    nome: 'Artus',
+    salario: '5000',
+    liguagemProgramacao: 'TypeScript'
+};
+console.log(desenvoldor65);
 const meuEndereco65 = {
     rua: "Av. Paulista",
     cidade: "São Paulo",
