@@ -109,12 +109,16 @@ function detalhesVeiculos71(veiculo: Carro71 | Moto71) {
         console.log(`O nome do Carro é: ${veiculo.nome} e a marca é: ${veiculo.marca}`);
     } else if (veiculo instanceof Moto71) {
         console.log(`O nome da Moto é: ${veiculo.nome} e o ano é: ${veiculo.ano}`);
+    } else {
+        console.log('Não é instancia da classe');
     }
 }
 const carro71 = new Carro71("Fiat", 'Honda');
-console.log(carro71);
+detalhesVeiculos71(carro71);
 
 const moto71 = new Moto71("Honda", 2022);
-console.log(moto71);
+detalhesVeiculos71(moto71);
+/*Ele aceita pq tem as propriedades das classes, mas não é uma instancia por isso cai no ELSE */
+detalhesVeiculos71({ nome: "Teste", ano: 2092 });//N é instancia da classe
 
 

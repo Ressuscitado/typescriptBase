@@ -90,3 +90,13 @@ console.log(exibirMsg43('Igor'));
 console.log(exibirMsg43('Igor', 'Bom dia'));
 
 
+//Outro exemplo de lógica de função
+function finalPrice75(preco: number, desconto: number, formato: boolean): number | string {
+    const finalPrice75_ = preco * (1 - desconto);
+    //If simplificado
+    return formato ? `R$ ${finalPrice75_}` : finalPrice75_;
+}
+const desconto75 = finalPrice75(100, 0.15, true);//string
+console.log(desconto75);
+const desconto75_ = finalPrice75(100, 0.15, false);//number
+console.log(desconto75_);

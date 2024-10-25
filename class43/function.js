@@ -53,3 +53,11 @@ function exibirMsg43(nome, msg = 'Ola amado') {
 }
 console.log(exibirMsg43('Igor'));
 console.log(exibirMsg43('Igor', 'Bom dia'));
+function finalPrice75(preco, desconto, formato) {
+    const finalPrice75_ = preco * (1 - desconto);
+    return formato ? `R$ ${finalPrice75_}` : finalPrice75_;
+}
+const desconto75 = finalPrice75(100, 0.15, true);
+console.log(desconto75);
+const desconto75_ = finalPrice75(100, 0.15, false);
+console.log(desconto75_);
