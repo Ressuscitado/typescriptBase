@@ -1,4 +1,20 @@
-/*Uma interface é um contrato que define a estrutura de um objeto. Interfaces podem ser estendidas, o que permite que você crie uma nova interface que herda de uma ou mais interfaces existentes.*/
+/*Uma interface é um contrato que define a estrutura de um objeto. Interfaces podem ser estendidas, o que permite que você crie uma nova interface que herda de uma ou mais interfaces existentes.
+
+No TypeScript, quando estamos declarando tipos (como um type ou uma interface), o separador entre as propriedades pode ser tanto vírgula quanto ponto e vírgula, e ambos funcionarão corretamente:
+type Pessoa = {
+    nome: string;// Ponto e vírgula é permitido em anotações de tipo TypeScript
+    idade: number;
+    profissao: string;
+};
+
+ou
+
+type Pessoa2 = {
+    nome: string,
+    idade: number,
+    profissao: string,
+};
+*/
 
 // Definindo uma interface 'Pessoa'
 interface Pessoa65 {

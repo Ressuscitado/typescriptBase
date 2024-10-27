@@ -1,4 +1,5 @@
-/*Object: Representa valores que não são primitivos.
+/*
+Object: Representa valores que não são primitivos.
 Primitivos --> number, string, boolean, bigint, symbol, null, undefined
 Object é a melhor forma de representar dados. Podem ser anônimos ou nomeados
 
@@ -153,8 +154,21 @@ console.log(acessarSistema22<Admin>(admin));
 console.log(acessarSistema5(usuario));*/
 
 
-
-
-
-
 /*export {} é usada para sinalizar que o arquivo é um módulo. Ao usar TypeScript ou JavaScript em modo de módulos (ECMAScript modules), qualquer arquivo que contenha uma instrução export ou import é tratado como um módulo, o que isola seu escopo e impede variáveis, funções e classes de serem acessíveis globalmente.*/
+
+/*
+No TypeScript, quando estamos declarando tipos (como um type ou uma interface), o separador entre as propriedades pode ser tanto vírgula quanto ponto e vírgula, e ambos funcionarão corretamente:
+type Pessoa = {
+    nome: string;        // Ponto e vírgula é permitido em anotações de tipo TypeScript
+    idade: number;
+    profissao: string;
+};
+
+// ou
+
+type Pessoa2 = {
+    nome: string,
+    idade: number,
+    profissao: string,
+};
+*/
