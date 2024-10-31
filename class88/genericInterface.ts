@@ -13,8 +13,11 @@ const myPair88: Pair88<number, string> = {
 }
 console.log(myPair88);
 
-/*Criando uma interface generica para uma API em caso real
+/*Criando uma interface generica para uma API em caso real, 
+Vamos usar essa API bem famosa para testes gratuitos:
+
 https://jsonplaceholder.typicode.com/todos/1
+
 usando essa API que retorna algo como:
 {
   "userId": 1,
