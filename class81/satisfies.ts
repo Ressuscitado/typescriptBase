@@ -1,4 +1,5 @@
 /*SATISFIES
+Muito util para quando temos tipos de tipos, tipos compostos, quando queremos garantir que seja compativel com um tipo mas sem perder os tipos adicionais.
 O satisfies e a anotação de tipo direta em TypeScript(Definir um tipo e atribuir ele a algo) têm propósitos semelhantes(iguais), pois ambos validam a conformidade de um objeto com um tipo definido, mas não impõem restrições sobre a mutabilidade dos valores ou a imutabilidade das propriedades. Todavia o Satisfies é mais incisivo, ele olha mais profundamente.
 
 O operador satisfies em TypeScript é utilizado para garantir que um valor satisfaça um tipo específico, permitindo que o TypeScript infira tipos mais específicos, enquanto ainda realiza a verificação do tipo que queremos garantir. Ele é útil para trabalhar com tipos complexos onde você quer que o tipo do valor permaneça mais restrito, mas ainda compatível com o tipo maior */
